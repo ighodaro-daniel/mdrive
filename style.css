@@ -1,0 +1,58 @@
+.hero-image {
+    background-image: url(img/SC1-BLUEBGD.png);
+    background-size: cover;
+    height: 90vh;
+    margin-top: 10px;
+}
+
+.hero-first {
+    color: azure;
+}
+
+.hero-logo {
+    left: 600px;
+    position: relative;
+    top: 150px;
+}
+
+.section1 {
+    background-image: url(img/SC2-CRESTREPEAT.png);
+    background-size: cover;
+    height: 100vh;
+    margin-top: 10px;
+    padding-bottom: 500px;
+
+}
+
+.section1-img1 {
+    margin-left: 350px;
+    margin-top: 100px;
+}
+
+.section2 {
+    background-image: url(img/SC3-GREYTREES.png);
+    background-size: cover;
+    height: 70vh;
+
+}
+
+.section2-writeup {
+    color: azure;
+}
+
+.section3 {
+    background: linear-gradient(to right, #0A1F44, #123A72);
+    height: 100vh;
+    /* Adjust height as needed */
+    width: 100%;
+}
+
+
+
+
+.hero-words {
+    top: 100px;
+    text-align: center;
+    position: relative;
+
+}
