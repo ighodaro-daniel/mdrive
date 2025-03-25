@@ -1,58 +1,208 @@
+/* General Styles for Larger Screens */
 .hero-image {
     background-image: url(img/SC1-BLUEBGD.png);
     background-size: cover;
-    height: 90vh;
-    margin-top: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.hero-logo {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: auto;
+}
+
+.hero-words {
+    position: absolute;
+    bottom: 100px;
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
 }
 
 .hero-first {
     color: azure;
-}
-
-.hero-logo {
-    left: 600px;
-    position: relative;
-    top: 150px;
+    font-size: 3rem;
 }
 
 .section1 {
     background-image: url(img/SC2-CRESTREPEAT.png);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
-    margin-top: 10px;
-    padding-bottom: 500px;
-
-}
-
-.section1-img1 {
-    margin-left: 350px;
-    margin-top: 100px;
+    margin-top: -90px;
 }
 
 .section2 {
     background-image: url(img/SC3-GREYTREES.png);
     background-size: cover;
-    height: 70vh;
-
-}
-
-.section2-writeup {
-    color: azure;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    padding-top: 50px;
 }
 
 .section3 {
     background: linear-gradient(to right, #0A1F44, #123A72);
-    height: 100vh;
-    /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 60vh;
     width: 100%;
+    padding-top: 50px;
+    padding-bottom: 10px;
 }
 
+/* General Responsive Styles */
+@media (max-width: 1024px) {
+    .hero-image {
+        min-height: 80vh;
+        padding: 50px 20px;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
+    .social {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 
+    .hero-logo {
+        width: 80%;
+        max-width: 250px;
+        position: relative;
+        top: 0;
+    }
 
-.hero-words {
-    top: 100px;
-    text-align: center;
-    position: relative;
+    .hero-words {
+        position: relative;
+        text-align: center;
+        margin-top: 20px;
+        max-width: 90%;
+    }
 
+    .section1 {
+        height: 1200px;
+        padding-bottom: 300px;
+    }
+
+    .section1-img1 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    .under-img1 {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .under-img1 img {
+        width: 90%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+
+    .section2 {
+        min-height: 40vh;
+        padding-bottom: 20px;
+
+    }
+
+    .section2-writeup {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .section3 {
+        min-height: 85vh;
+        padding: 50px 20px;
+    }
+
+    .foot {
+        padding: 50px 20px;
+    }
+
+    /* Form Fixes */
+    .foot input {
+        width: 90%;
+        max-width: 400px;
+        margin: 10px 0;
+    }
+
+    .foot .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foot button {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
+/* Mobile-specific styles */
+@media (max-width: 640px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        margin-right: 0;
+        padding: 10px;
+    }
+
+    .hero-image {
+        min-height: 70vh;
+        padding: 20px;
+    }
+
+    .hero-logo {
+        width: 70%;
+        max-width: 200px;
+    }
+
+    .hero-words {
+        font-size: 1.2rem;
+        max-width: 90%;
+    }
+
+    .section1 {
+        height: auto;
+        padding-bottom: 200px;
+    }
+
+    .section2 {
+        min-height: 80vh;
+    }
+
+    .section3 {
+        min-height: 75vh;
+    }
+
+    .social {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
